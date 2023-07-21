@@ -1,0 +1,270 @@
+/*
+/**
+Theme Name: Astra Child Theme
+Author: GolovaTrava
+Description: Child Theme for Astra!
+Template: astra
+Version: 1.0
+*/
+
+/* Вказуємо box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Прибираєм внутрішні відступи */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Прибираєм відступи */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* ul та il*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* img */
+img {
+    width: 100%;
+    display: block;
+}
+
+/* font */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Normalize */
+
+body, body a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5;
+    background: #FFFFFF!important;
+    color: #000!important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #2D2D2D;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #2D2D2D!important;
+}
+
+.main-container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#primary {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+
+body, html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    margin-top: 0!important;
+}
+
+.std-button,
+.wpcf7-submit{
+    background: #000!important;
+    border: 2px solid #000!important;
+    padding: 10px!important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    width: fit-content!important;
+    cursor: pointer;
+    min-width: 134px;
+    font-size: 16px!important;
+    line-height: normal;
+    transition: all ease 0.3s;
+}
+
+.std-button:hover,
+.wpcf7-submit:hover{
+    background: transparent!important;
+    color: #000!important;
+}
+
+@media screen and (min-width: 768px) {
+    .main-container {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 992px) {
+    .main-container {
+        max-width: 940px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-container {
+        padding: 0px 15px;
+    }
+
+    .firstscreen .main-container {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 991px) {
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 44px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 22px;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    .mb100 {
+        margin-bottom: 100px;
+    }
+
+    body {
+       font-size: 18px;
+    }
+
+    #content {
+        margin-top: 150px!important;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    #content {
+        margin-top: 130px!important;
+    }
+
+    .mb100 {
+        margin-bottom: 60px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+.events__row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.submit-wrapper {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+}
